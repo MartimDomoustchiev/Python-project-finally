@@ -1,3 +1,7 @@
+from colorama import init
+init(autoreset=True)
+
+from account.user import login, register, get_user_credits
 from games.roulette import play_roulette
 from games.highlow import play_highlow
 from games.blackjack import play_blackjack
@@ -5,7 +9,7 @@ from games.wheel import play_wheel
 from games.slot import play_slot
 
 def main():
-    print("Добре дошли в казиното!")
+    print("Добре дошли в КАЗИНОТО!")
     while True:
         choice = input("1. Регистрация\n2. Вход\n3. Изход\nИзбор: ")
         if choice == "1":
