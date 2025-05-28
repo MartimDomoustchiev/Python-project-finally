@@ -32,7 +32,7 @@ def login():
         for line in f:
             user, pwd, credits = line.strip().split(",")
             if user == username and pwd == password:
-                print(f"Успешен вход. Имате {credits} кредита.")
+                print(f"Успешен влезнахте. Имате {credits} кредита.")
                 return username
     print("Грешно потребителско име или парола.")
     return None

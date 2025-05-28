@@ -8,6 +8,16 @@ from games.blackjack import play_blackjack
 from games.wheel import play_wheel
 from games.slot import play_slot
 
+
+import pygame
+from ui.simple_ui import main_menu
+
+pygame.init()
+screen = pygame.display.set_mode((800, 600))
+pygame.display.set_caption("Казино Приложение")
+main_menu(screen)
+pygame.quit()
+
 def main():
     print("Добре дошли в КАЗИНОТО!")
     while True:
