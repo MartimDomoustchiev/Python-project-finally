@@ -28,34 +28,33 @@
 ## Структура на проекта
 
 Python-project-finally/
-│
-├── main.py # Главен файл за стартиране на приложението
-├── requirements.txt # Зависимости за проекта
-├── users.txt # Файл с регистрирани потребители
-│
-├── account/ # Управление на потребителите и техните финанси
-│ ├── init.py
-│ ├── account.py
-│ ├── user.py
-│ └── wallet.py
-│
-├── games/ # Реализация на казино игрите
-│ ├── init.py
-│ ├── roulette.py
-│ ├── highlow.py
-│ ├── blackjack.py
-│ ├── wheel.py
-│ └── slot.py
-│
-├── ui/ # Потребителски интерфейс
-│ ├── init.py
-│ └── simple_ui.py
-│
-├── tests/ # Pytest тестове
-│ ├── init.py
-│ └── test_games.py
-│
-└── README.md # Описание на проекта
+- main.py                # Главен файл за стартиране на приложението
+- requirements.txt       # Зависимости за проекта
+- users.txt              # Файл с регистрирани потребители
+
+- account/               # Управление на потребителите и техните финанси
+  - __init__.py
+  - account.py
+  - user.py
+  - wallet.py
+
+- games/                 # Реализация на казино игрите
+  - __init__.py
+  - roulette.py
+  - highlow.py
+  - blackjack.py
+  - wheel.py
+  - slot.py
+
+- ui/                    # Потребителски интерфейс
+  - __init__.py
+  - simple_ui.py
+
+- tests/                 # Pytest тестове
+  - __init__.py
+  - test_games.py
+
+- README.md              # Описание на проекта
 
 
 
