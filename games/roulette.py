@@ -128,7 +128,7 @@ def play_roulette(username, credits):
             result_text = f"Резултат: {result} {color_emoji}"
             screen.blit(font.render(result_text, True, (255, 215, 0)), (20, 240))
 
-            win_text = "Печелиш! 🎉" if win else "Губиш!"
+            win_text = "Печелиш!" if win else "Губиш!"
             win_color = (0, 255, 0) if win else (255, 100, 100)
             screen.blit(font.render(win_text, True, win_color), (20, 280))
 

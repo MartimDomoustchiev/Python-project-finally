@@ -25,7 +25,7 @@ def play_wheel(username, credits):
     bet = 0
     input_text = ""
     input_mode = "bet"
-    message = "Въведи залог и натисни ENTER:"
+    message = "Въведи залог (ENTER):"
     result = None
     result_text = ""
     winnings = 0
@@ -118,7 +118,7 @@ def play_wheel(username, credits):
                 input_mode = "done"
                 result_text = f"Резултат: {result}"
                 if winnings > 0:
-                    message = f"Печелиш {winnings} кредита! 🎉"
+                    message = f"Печелиш {winnings} кредита!"
                 else:
                     message = "Губиш! "
 
