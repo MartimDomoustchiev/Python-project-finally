@@ -73,7 +73,7 @@ def play_roulette(username, credits):
             result_surf = big_font.render(result_text, True, (255, 215, 0))
             screen.blit(result_surf, (400 - result_surf.get_width() // 2, 300))
 
-            win_text = "Печелите! 🎉" if win else "Губите! 😞"
+            win_text = "Печелите! 🎉" if win else "Губите!"
             win_surf = font.render(win_text, True, (0, 255, 0) if win else (255, 100, 100))
             screen.blit(win_surf, (400 - win_surf.get_width() // 2, 380))
 
@@ -119,13 +119,13 @@ def play_roulette(username, credits):
                             result = random.randint(0, 36)
                             if choice == 'r' and result in red_numbers:
                                 win = True
-                                credits += bet
+                                credits += bet * 0.5
                             elif choice == 'b' and result in black_numbers:
                                 win = True
-                                credits += bet
+                                credits += bet * 0.5
                             elif choice.isdigit() and int(choice) == result:
                                 win = True
-                                credits += bet * 35
+                                credits += bet * 18
                             else:
                                 win = False
                                 credits -= bet

@@ -61,7 +61,7 @@ def play_highlow(username, credits):
                             current = next_num
                             result_msg = f"Поздравления! Следващо число: {next_num} | Серия: {streak}"
                             if streak == 10:
-                                winnings = bet * 50
+                                winnings = bet * 25
                                 credits += winnings
                                 update_user_credits(username, credits)
                                 status = f"Победа! Спечели {winnings} кредита! Натисни ENTER за нова игра или ESC за изход."

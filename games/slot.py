@@ -38,7 +38,7 @@ def play_slot(username, credits):
                                 credits -= bet
                                 reels = [random.choice(symbols) for _ in range(3)]
                                 if reels[0] == reels[1] == reels[2]:
-                                    winnings = bet * 50
+                                    winnings = bet * 15
                                     credits += winnings
                                     result_msg = f"Печеливша серия! Спечели {winnings} кредита!"
                                 else:
